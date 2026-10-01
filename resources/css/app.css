@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+@plugin 'daisyui';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+
+    --color-maroon: #A20404;
+    --color-strawberry: #FF0100;
+    --color-golden: #FFAD01;
+    --color-navy: #192A54;
+    --color-skyblue: #0284C7;
+    --color-bimba-black: #000000;
+    --color-bimba-white: #FFFFFF;
+}
+
+/* Custom Utilities for BIMBA Brand */
+.bg-bimba-navy {
+    background-color: #192A54;
+}
+.bg-bimba-skyblue {
+    background-color: #0284C7;
+}
+.bg-bimba-maroon {
+    background-color: #A20404;
+}
+.bg-bimba-golden {
+    background-color: #FFAD01;
+}
+.bg-bimba-strawberry {
+    background-color: #FF0100;
+}
+
+.text-bimba-navy {
+    color: #192A54;
+}
+.text-bimba-skyblue {
+    color: #0284C7;
+}
+.text-bimba-maroon {
+    color: #A20404;
+}
+.text-bimba-golden {
+    color: #FFAD01;
+}
+.text-bimba-strawberry {
+    color: #FF0100;
+}
+
+.border-bimba-maroon {
+    border-color: #A20404;
+}
+.border-bimba-skyblue {
+    border-color: #0284C7;
+}
+
